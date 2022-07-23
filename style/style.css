@@ -135,9 +135,24 @@ h2 {
 
 /*Footer*/
 
+.troll {
+    vertical-align: top;
+    width: 200px;
+    height: 150px;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+
+/*Footer*/
+
 footer {
     background-color: #e5e7f5;
     font-size: large;
+    width: 100%;
+    display: inline-block;
+    padding-top: 25px;
 }
 
 footer a {
