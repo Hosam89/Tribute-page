@@ -5,13 +5,14 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 html {
     background-color: #000000;
     background-image: linear-gradient(180deg, #000000 7%, #6284FF 20%, #e0cece 100%);
 
-
+   
     margin: 0;
     padding: 0;
 }
@@ -88,28 +89,35 @@ nav a:hover {
 .firstSection {
     background-color: #6284FF;
     background-image: linear-gradient(180deg, #6284FF 70%, #e0cece 100%);
+        display: flex;
+        flex-wrap: wrap;
 
 
 }
 
 section div {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-img[src$=".png"] {
-    margin-left: 20%;
-    padding-bottom: 20px;
-}
 
 
 p {
     font-family: 'Lobster', cursive;
     font-size: 25px;
 }
-
+@media screen and (max-width:850px) {
+    .firstSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
 /*Second section*/
 
 .secondSection {
